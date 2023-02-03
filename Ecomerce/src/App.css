@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200;1,300&family=Righteous&family=Roboto:ital,wght@0,700;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.itemsCart {
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  background-color: red;
+  border-radius: 2rem;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: red;
+  color: #fff;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.itemsCart {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+}
+
+.itemsMap {
+  border: 1px solid gray;
+  margin: 0.7rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.btnStore {
+  border: none;
+  color: red;
+  background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .itemsCart {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .itemsCart, .header{
+    max-width: 380px;
+  
+  }
+
+  header{
+    border-radius: 0;
+  }
+}
